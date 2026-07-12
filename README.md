@@ -11,7 +11,7 @@ This workspace is organized as follows:
 
 ---
 
-## 🛠️ Backend Setup (`transit-api/`)
+## Backend Setup (`transit-api/`)
 
 The backend is built with FastAPI, SQLAlchemy Async, and a local SQLite database.
 
@@ -53,7 +53,7 @@ The backend is built with FastAPI, SQLAlchemy Async, and a local SQLite database
 
 ---
 
-## 💻 Frontend Setup (`dispatch-console/`)
+##  Frontend Setup (`dispatch-console/`)
 
 The frontend is a single-page React application powered by Vite, Tailwind CSS, and TanStack Query.
 
@@ -91,7 +91,7 @@ The frontend is a single-page React application powered by Vite, Tailwind CSS, a
 
 ---
 
-## 🤝 Team Git Workflow
+##  Team Git Workflow
 
 To coordinate work among the 4-member team without conflicts, please follow this branch structure:
 
