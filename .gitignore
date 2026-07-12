@@ -1,0 +1,20 @@
+# Frontend (dispatch-console)
+dispatch-console/node_modules/
+dispatch-console/dist/
+dispatch-console/.env
+dispatch-console/*.local
+dispatch-console/*.tsbuildinfo
+
+# Backend (transit-api)
+transit-api/__pycache__/
+transit-api/*.py[cod]
+transit-api/*$py.class
+transit-api/.venv/
+transit-api/venv/
+transit-api/env/
+transit-api/transitops.db
+
+# General / OS
+.DS_Store
+Thumbs.db
+.vscode/
