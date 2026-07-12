@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-parchment-200 text-ink-900 font-sans antialiased;
+  }
+  h1, h2, h3 {
+    @apply font-display;
+  }
+  ::selection {
+    @apply bg-stamp-light/40;
+  }
+  :focus-visible {
+    @apply outline outline-2 outline-offset-2 outline-stamp;
+  }
+}
+
+@layer components {
+  /* A "manifest stub" card: perforated left edge like a tear-off shipping ticket */
+  .manifest-card {
+    @apply relative bg-parchment-100 border border-ink-900/10 rounded-sm shadow-sm;
+  }
+  .manifest-card::before {
+    content: '';
+    @apply absolute left-0 top-0 bottom-0 w-[3px];
+    background-image: repeating-linear-gradient(
+      to bottom,
+      theme('colors.ink.900' / 15%) 0,
+      theme('colors.ink.900' / 15%) 4px,
+      transparent 4px,
+      transparent 9px
+    );
+  }
+
+  .eyebrow {
+    @apply text-[11px] uppercase tracking-[0.14em] font-mono text-slate;
+  }
+
+  .status-pill {
+    @apply inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-xs font-mono font-medium;
+  }
+}
